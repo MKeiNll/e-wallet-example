@@ -17,11 +17,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	compile group: 'org.springframework.security', name: 'spring-security-crypto', version: '5.4.1'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.3.4.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.3.4.RELEASE'
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	testCompile group: 'junit', name: 'junit', version: '4.13.1'
+	testCompile group: 'org.springframework.security', name: 'spring-security-test', version: '5.4.1'
 }
 
 test {

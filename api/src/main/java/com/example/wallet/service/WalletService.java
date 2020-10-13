@@ -1,6 +1,6 @@
 package com.example.wallet.service;
 
-import com.example.wallet.controller.wallet.dto.*;
+import com.example.wallet.controller.dto.*;
 import com.example.wallet.exception.MaxWalletSizeExceededException;
 import com.example.wallet.exception.NotEnoughFundsException;
 import com.example.wallet.exception.NotFoundException;

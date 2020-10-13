@@ -1,7 +1,8 @@
 package com.example.wallet;
 
-import com.example.wallet.controller.wallet.WalletController;
-import com.example.wallet.controller.wallet.dto.WalletDto;
+import com.example.wallet.configuration.AuthenticationEntryPoint;
+import com.example.wallet.controller.WalletController;
+import com.example.wallet.controller.dto.WalletDto;
 import com.example.wallet.model.Wallet;
 import com.example.wallet.service.WalletService;
 import org.junit.jupiter.api.Test;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -25,6 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(WalletController.class)
+@WithMockUser(authorities = "ROLE_ADMIN")
 public class WalletControllerIntegrationTest {
 
     @Autowired
@@ -32,6 +35,9 @@ public class WalletControllerIntegrationTest {
 
     @MockBean
     private WalletService service;
+
+    @MockBean
+    private AuthenticationEntryPoint entryPoint;
 
     @Test
     public void givenWallets_whenGetWallets_thenReturnJsonArray()
