@@ -26,6 +26,10 @@ public class Wallet {
 		name = createRequest.name;
 	}
 
+	public Wallet(String name) {
+		this.name = name;
+	}
+
 	public Long getId() {
 		return id;
 	}
