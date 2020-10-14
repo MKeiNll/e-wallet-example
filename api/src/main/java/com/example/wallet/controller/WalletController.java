@@ -1,6 +1,6 @@
 package com.example.wallet.controller;
 
-import com.example.wallet.controller.dto.*;
+import com.example.wallet.dto.*;
 import com.example.wallet.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;

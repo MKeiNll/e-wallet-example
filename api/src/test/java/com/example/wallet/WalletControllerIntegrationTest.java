@@ -2,7 +2,7 @@ package com.example.wallet;
 
 import com.example.wallet.configuration.AuthenticationEntryPoint;
 import com.example.wallet.controller.WalletController;
-import com.example.wallet.controller.dto.WalletDto;
+import com.example.wallet.dto.WalletDto;
 import com.example.wallet.model.Wallet;
 import com.example.wallet.service.WalletService;
 import org.junit.jupiter.api.Test;

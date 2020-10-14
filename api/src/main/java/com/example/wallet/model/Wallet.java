@@ -1,6 +1,6 @@
 package com.example.wallet.model;
 
-import com.example.wallet.controller.dto.WalletCreateRequestDto;
+import com.example.wallet.dto.WalletCreateRequestDto;
 
 import javax.persistence.*;
 import javax.validation.constraints.Digits;

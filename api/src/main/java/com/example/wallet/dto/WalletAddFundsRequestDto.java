@@ -1,4 +1,4 @@
-package com.example.wallet.controller.dto;
+package com.example.wallet.dto;
 
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Digits;
