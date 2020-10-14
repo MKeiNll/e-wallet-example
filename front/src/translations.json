@@ -1,0 +1,53 @@
+{
+  "eng": {
+    "translations": {
+      "menu": {
+        "logoutLabel": "Logout",
+        "loginLabel": "Login",
+        "languageLabel": "Language: English",
+        "walletsLabel": "All wallets"
+      },
+      "loginPage": {
+        "usernameLabel": "Username:",
+        "passwordLabel": "Password:",
+        "loginButtonLabel": "Login"
+      },
+      "walletsPage": {
+        "newWalletModal": {
+          "title": "Add new wallet",
+          "nameLabel": "Wallet name:",
+          "createButtonLabel": "Add wallet"
+        },
+        "addFundsModal": {
+          "title": "Add funds to wallet",
+          "amountLabel": "Amount:",
+          "submitButtonLabel": "Add funds"
+        },
+        "withdrawFundsModal": {
+          "title": "Withdraw funds from wallet",
+          "amountLabel": "Amount:",
+          "submitButtonLabel": "Withdraw funds"
+        },
+        "sendFundsModal": {
+          "title": "Send funds from wallet",
+          "amountLabel": "Amount:",
+          "toWalletIdLabel": "Recipient wallet ID:",
+          "submitButtonLabel": "Send funds"
+        },
+        "tableIdLabel": "Wallet ID",
+        "tableNameLabel": "Wallet name",
+        "tableBalanceLabel": "Wallet balance",
+        "newWalletButtonLabel": "Add new wallet",
+        "addFundsButtonLabel": "Add funds",
+        "withdrawFundsButtonLabel": "Withdraw funds",
+        "sendFundsButtonLabel": "Sends funds"
+      },
+      "input": {
+        "inputErrorMessage": "Something is wrong with your input"
+      },
+      "notifications": {
+        "successMessage": "Success"
+      }
+    }
+  }
+}
