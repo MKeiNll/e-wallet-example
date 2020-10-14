@@ -10,9 +10,7 @@ import java.math.BigDecimal;
 @Table(name = "wallet")
 public class Wallet {
 
-	private @Id
-	@GeneratedValue
-	Long id;
+	private @Id @GeneratedValue Long id;
 
 	@Column(length=32, nullable=false, unique=false)
 	private String name;
